@@ -27,7 +27,7 @@ On the sensor each pin are named to denote what they do. The pins we need are:
 
 
 Using the above pinout and the provided wires, you can connect the sensor to the Pycom device. 
-In general be careful to ensure that you have wired everything correctly. Check the pinout diagram to find the needed pins and 
+In general be careful to ensure that you have wired everything correctly. Check the pinout diagram to find the needed pins and ensure the names are the same as the printed names on the board where the wires are plugged in.
 
 
 ## 2. Program the sensor
