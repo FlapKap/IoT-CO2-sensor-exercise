@@ -1,10 +1,12 @@
-# CO2 Sensor exercise
-Today we will connect a CO2 sensor to our Pycom boards and read sensor-values from it.
-This could provide valuable information to check the air quality of a classroom, building or even a city.
+# Air Quality Sensor Exercise
+Today we will connect an air quality sensor to our Pycom boards and read measurements from it.
+A real world use-case for this could be to check the air in a classroom, building or even a city.
 
-The exercise is split into two parts. First we need to connect the sensor to our Pycom board, and second we need to program it to talk with the sensor.
+The air quality sensor we will use is the [Sensirion SCD30](https://sensirion.com/products/catalog/SCD30/).
 
-## Connect the sensor
+The exercise is split into two parts. First we need to connect the sensor to our Pycom board, and second we need to program the Pycom device to talk with the sensor.
+
+## 1. Connect the sensor
 To connect the sensor to the Pycom device, each pin on the sensor should be wired to the correct pins on the Pycom device. Luckily each Pycom device is connected to an expansion board which allows us to wire without soldering. 
 The SCD30 sensor supports the [I2C](https://en.wikipedia.org/wiki/I%C2%B2C) protocol which uses two pins for communication and two for power.
 
@@ -28,7 +30,7 @@ Using the above pinout and the provided wires, you can connect the sensor to the
 In general be careful to ensure that you have wired everything correctly. Check the pinout diagram to find the needed pins and 
 
 
-## Program the sensor
+## 2. Program the sensor
 Now that you have the sensor connected we want to be able to read measurements from it. To do this we need to establish an I2C connection to it. Luckily a MicroPython library exists that does this for us. 
 
 Create a new Pymakr project, and create a `lib` folder in the root of your project.
